@@ -1,0 +1,7 @@
+mid_automatic_node_downloader:
+  path: '/admin/content/automatic_node_downloader'
+  defaults:
+    _form: '\Drupal\automatic_node_downloader\Form\MidANDForm'
+    _title: 'MID Automatic Node Downloader'
+  requirements:
+    _permission: 'administer mid AND'

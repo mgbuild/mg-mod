@@ -1,0 +1,36 @@
+<?php
+
+/**
+* Implements hook_menu()
+*
+
+function mid_redirection_array() {
+  return array(
+    'admin/content/mid_redirection' => array(
+      'title' => 'mid redirection submissions',
+      'route_name' => 'mid_redirection_list',
+    ),
+    'admin/content/mid_redirection/add' => array(
+      'title' => 'mid redirection',
+      'route_name' => 'mid_redirection_add',
+    ),
+    'admin/content/mid_redirection/delete/%' => array(
+      'title' => 'Delete mid redirection submission',
+      'route_name' => 'mid_redirection_delete',
+    ),
+  );
+}
+
+**
+ * Implements hook_permission()
+ */
+/*function mid_redirection_permission() {
+  return array(
+    'manage mid redirection forms' => array(
+      'title' => t('Manage mid redirection form submissions'),
+    ),
+    'use mid redirection form' => array(
+      'title' => t('Use the mid redirection form'),
+    ),
+  );
+}*/

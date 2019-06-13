@@ -1,0 +1,11 @@
+name: MID Automatic node downloader
+description: 'This module helps in downloading the node from the website.'
+type: module
+core: 8.x
+library: drupal.automatic_node_downloader
+
+package: MID
+
+dependencies:
+  - mid_common
+

@@ -1,0 +1,4 @@
+mid_automatic_node_downloader:
+  title: MID AND settings
+  route_name: mid_automatic_node_downloader
+  parent: mid_common.admin_content

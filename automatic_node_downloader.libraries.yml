@@ -1,0 +1,6 @@
+drupal.automatic_node_downloader:
+  version: VERSION
+  js:
+    js/automatic_node_downloader.js: {}
+#  dependencies:
+#    - core/drupal.form

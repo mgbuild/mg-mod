@@ -1,0 +1,25 @@
+<?php
+
+/**
+ * Update hooks for the Redirect module.
+ */
+ function automatic_node_downloader_install(){
+     
+ }
+ 
+ function automatic_node_downloader_uninstall(){
+     
+ }
+
+function automatic_node_downloader_requirements($phase) {
+ if ($phase == 'install' || $phase == 'runtime') {
+   if( !file_exists( DRUPAL_ROOT  . '/vendor/excellibrary/php-excel-reader/excel_reader2.php') ){
+      $requirements ['and_module'] = array(
+        'title' => t('MID Automatic Node Downloader Module'),
+        'value' => t('You need PHPExcel library to use this module. Get the excellibrary zip folder from current module and extract it into the vendor location.'),
+        'severity' => REQUIREMENT_ERROR,
+      );
+    }
+ }
+ return $requirements;
+} 
